@@ -53,7 +53,7 @@ jobs:
     needs: cypress-e2e-electron
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node-20.17.0-chrome-128.0.6613.137-1-ff-130.0.1-edge-128.0.2739.67-1
+      image: cypress/browsers:node-20.17.0-firefox-130.0.1
       options: --user 1001
     steps:
       - name: Get code
